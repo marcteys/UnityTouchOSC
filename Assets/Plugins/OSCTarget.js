@@ -9,6 +9,6 @@ function Update () {
 
 }
 
-function OnOscMessage () {
-
+function OnOscMessage (args:ArrayList ) {
+	Debug.Log(args[0]);
 }

@@ -6,10 +6,11 @@ using System.Collections.Generic;
 using System.Text.RegularExpressions;
 
 public class UnityOSCListener : MonoBehaviour  {
+			public GameObject target;
+
 	public void OSCMessageReceived(OSC.NET.OSCMessage message){	
 		string address = message.Address;
 		ArrayList args = message.Values;
-		GameObject target;
 		
 		string type = address;
 
@@ -27,9 +28,9 @@ foreach(GameObject tmpObj in GameObject.FindGameObjectsWithTag("button"))
 				
 							target = tmpObj;
 							if (target) {
-            				    target.SendMessage ("OnOscMessage", message);
+            				    target.SendMessage ("OnOscMessage", args);
            					 }
-					}	
+					}
 	
 			}
 }
