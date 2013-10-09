@@ -1,0 +1,15 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\UnityOSCListener.cs">
+    <Files>
+      <File FileName="Assets\Scripts\UnityOSCReceiver.cs" Line="26" Column="1" />
+      <File FileName="Assets\Standard Assets\Plugins\OSC.NET\jsOSCMessage.cs" Line="21" Column="40" />
+      <File FileName="Assets\Standard Assets\Plugins\OSC.NET\jsOSCBundle.cs" Line="24" Column="26" />
+      <File FileName="Assets\Scripts\UnityOSCListener.cs" Line="15" Column="4" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
