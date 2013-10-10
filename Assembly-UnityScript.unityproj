@@ -44,11 +44,14 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\OSCTarget.js" />
+     <Compile Include="Assets\Scripts\StarterKit\baseOscAccess.js" />
+     <Compile Include="Assets\Scripts\StarterKit\faderSlideExample.js" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
       <Project>{DBD21D59-6CE7-07D9-F312-8C05B6E91168}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+    <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
+      <Project>{DA222266-D634-C749-5FC4-7347ADCCF9C0}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

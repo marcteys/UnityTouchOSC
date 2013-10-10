@@ -11,9 +11,6 @@ public var xyCoords : float[] = new float[2];
 public var fader : float = 0;
 
 
-public var multiToggle : boolean; //same as toggle
-public var multiFader : float; //same as fader
-
 
 
 function Start () {
