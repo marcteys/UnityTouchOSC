@@ -13,12 +13,22 @@ public class UnityOSCListener : MonoBehaviour  {
 			Debug.Log ("adress : " + address);
 		}
 		foreach(GameObject tmpObj in GameObject.FindGameObjectsWithTag("button")){
-			if(tmpObj.GetComponent<OSCTarget>()!= null) {
-							if(tmpObj.GetComponent<OSCTarget>().targetName == address) {
+			
+			
+			
+			
+			if(tmpObj.GetComponent<OSCSimpleTarget>()!= null) {
+							if(tmpObj.GetComponent<OSCSimpleTarget>().targetName == address) {
 							target = tmpObj;
 							target.SendMessage ("OnOscMessage", args);
 					}
 			}
+			
+			//ajouter une emission pour multiple target
+			
+			
+			
+			
 		}
 	}
 }

@@ -1,7 +1,6 @@
 import System;
 import System.Text.RegularExpressions;
 
-
 public var targetName : String;
 public var type : String;
 
@@ -9,7 +8,6 @@ public var toggle :boolean = false;
 public var push:boolean = false;
 public var xyCoords : float[] = new float[2];
 public var fader : float = 0;
-
 
 
 
