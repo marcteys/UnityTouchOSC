@@ -9,7 +9,7 @@ public class UnityOSCListener : MonoBehaviour  {
 		public void OSCMessageReceived(OSC.NET.OSCMessage message){	
 		string address = message.Address;
 		ArrayList args = message.Values;
-		Debug.Log (address);
+				//Debug.Log (address);
 		foreach(GameObject tmpObj in GameObject.FindGameObjectsWithTag("button")){
 			if(tmpObj.GetComponent<OSCTarget>()!= null) {
 							if(tmpObj.GetComponent<OSCTarget>().targetName == address) {

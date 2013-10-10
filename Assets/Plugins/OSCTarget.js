@@ -12,7 +12,7 @@ public var fader : float = 0;
 
 
 public var multiToggle : boolean; //same as toggle
-public var multiFadder : float; //same as fader
+public var multiFader : float; //same as fader
 
 
 
@@ -29,16 +29,28 @@ function Update () {
 }
 
 function OnOscMessage (args:ArrayList ) {
+
+	//button detection
+	
 	if(type == "push" && args[0] == 1) {
 			push = true;
 	
-	} else if(type == "toggle") {
-	
-	} 
-	else {
+	} else if(type == "toggle" && args[0] == 1 || type == "multitoggle" && args[0] == 1) {
+		toggle = true;
+
+	} else {
 		push = false;
 		toggle = false;
 	}
 	
+	//fader value
+	if(type == "rotary" || type == "fader" || type == "multifader" || type == "encoder") {
+		fader = args[0];
+	}
 		
+	//type = xy
+	if(type =="xy") {
+		xyCoords[0] = args[0];
+		xyCoords[1] = args[1];
+	}
 }
