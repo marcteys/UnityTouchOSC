@@ -32,10 +32,10 @@ function OnOscMessage (args:ArrayList ) {
 			} else if(type == "toggle" && args[0] == 1 || type == "multitoggle" && args[0] == 1) {
 				toggle = true;
 		
-			} else {
+			} else  if(type == "toggle" && args[0] == 1 || type == "multitoggle" && args[0] == 1) {
 				push = false;
 				toggle = false;
-			}
+			} 
 			
 			//fader value
 			if(type == "rotary" || type == "fader" || type == "multifader" || type == "encoder") {
