@@ -4,8 +4,11 @@ using System.Collections.Generic;
 using System.Text.RegularExpressions;
 
 public class UnityOSCListener : MonoBehaviour  {
-		public GameObject target;
+	
+		private GameObject target;
 		public bool debugMode;
+		public bool useAccelerometer = false;
+	
 		public void OSCMessageReceived(OSC.NET.OSCMessage message){	
 		string address = message.Address;
 		ArrayList args = message.Values;
@@ -24,14 +27,13 @@ public class UnityOSCListener : MonoBehaviour  {
 			
 			//send data for simple target game objects
 			if(tmpObj.GetComponent<OSCSimpleTarget>()!= null) {
-							if(tmpObj.GetComponent<OSCSimpleTarget>().targetName == address) {
+					if(tmpObj.GetComponent<OSCSimpleTarget>().targetName == address) {
 							target = tmpObj;
 							target.SendMessage ("OnOscMessage", args);
 					}
 			} 
 			
 			//send data for multiple target game objects
-
 			if(tmpObj.GetComponent<OSCMultiTarget>()!= null) {
 				for(var i =0; i < tmpObj.GetComponent<OSCMultiTarget>().targetName.Count ;i++) {
 					
@@ -47,6 +49,19 @@ public class UnityOSCListener : MonoBehaviour  {
 	
 			}
 			
-		}
+			
+			//send data accelerometer
+			
+			
+			
+		} // end foreach
+		
+		
+		
+		
 	}
+
+
+
+
 }

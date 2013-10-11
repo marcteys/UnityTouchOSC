@@ -44,6 +44,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\StarterKit\Examples\Example_Accelerometer.js" />
      <Compile Include="Assets\Scripts\StarterKit\Examples\Example_MultiTarget.js" />
      <Compile Include="Assets\Scripts\StarterKit\Examples\Example_SimpleTarget.js" />
      <Compile Include="Assets\Scripts\StarterKit\OSC_Get_Data.js" />

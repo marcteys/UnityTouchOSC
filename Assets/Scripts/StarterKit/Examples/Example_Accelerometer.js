@@ -19,7 +19,10 @@ function Update () {
 	
 	// your code goes there...
 	
+	
 
+	var rotation = Quaternion.Euler(Vector3(AccelerometerXYZ[0], AccelerometerXYZ[1], AccelerometerXYZ[2]));
+	transform.rotation = rotation;	
 }
 
 

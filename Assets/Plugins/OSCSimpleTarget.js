@@ -8,8 +8,9 @@ public var type : String;
 
 public var toggle :boolean = false;
 public var push:boolean = false;
-public var xyCoords : float[] = new float[2];
 public var fader : float = 0;
+public var xyCoords : float[] = new float[2];
+public var AccelerometerXYZ : float[] = new float[3];
 
 
 
@@ -51,4 +52,12 @@ function OnOscMessage (args:ArrayList ) {
 		xyCoords[0] = args[0];
 		xyCoords[1] = args[1];
 	}
+	
+				//accelerometer
+			if(type =="accxyz") {
+				AccelerometerXYZ[0] = args[0];
+				AccelerometerXYZ[1] = args[1];
+				AccelerometerXYZ[2] = args[2];
+			}	
+
 }
