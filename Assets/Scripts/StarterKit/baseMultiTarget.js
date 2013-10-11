@@ -1,7 +1,7 @@
 #pragma strict
-private var oscData : OSCSimpleTarget;
+private var oscData : OSCMultiTarget;
 
-private var fader : float;
+ var fader : float;
 private var push : boolean;
 private var toggle : boolean;
 private var xyCoords : float[] = new float[2];
@@ -10,7 +10,7 @@ private var xyCoords : float[] = new float[2];
 
 
 function Start () {
-	oscData = this.GetComponent(OSCSimpleTarget);
+	oscData = this.GetComponent(OSCMultiTarget);
 
 }
 
@@ -33,5 +33,4 @@ function GetData() {
 	push = oscData.push;
 	toggle = oscData.toggle;
 	xyCoords = oscData.xyCoords;
-
 }

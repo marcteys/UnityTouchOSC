@@ -9,7 +9,7 @@ using OSC.NET;
 public class UnityOSCReceiver : MonoBehaviour {
 	
 	private bool connected = false;
-	public int port = 8338; //MH faceShiftOSC default port
+	public int port = 8338; 
 	private OSCReceiver receiver;
 	private Thread thread;
 	
