@@ -26,7 +26,6 @@ public class UnityOSCListener : MonoBehaviour  {
 			if(tmpObj.GetComponent<OSCSimpleTarget>()!= null) {
 							if(tmpObj.GetComponent<OSCSimpleTarget>().targetName == address) {
 							target = tmpObj;
-							tmpObj.GetComponent<OSCSimpleTarget>().type = type;
 							target.SendMessage ("OnOscMessage", args);
 					}
 			} 

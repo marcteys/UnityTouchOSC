@@ -3,7 +3,7 @@ import System.Text.RegularExpressions;
 
 public var targetName : String;
 
-//The type is defined by UnityOSCListener
+//type is defined once
 public var type : String;
 
 public var toggle :boolean = false;
@@ -14,7 +14,11 @@ public var fader : float = 0;
 
 
 function Start () {
-	
+		//init
+		
+		type = targetName;
+		type = Regex.Replace(type, "[^a-z]", "");
+		
 }
 
 function Update () {
@@ -47,5 +51,4 @@ function OnOscMessage (args:ArrayList ) {
 		xyCoords[0] = args[0];
 		xyCoords[1] = args[1];
 	}
-	
 }

@@ -24,8 +24,7 @@ function Update () {
 }
 
 function OnOscMessage (args:ArrayList ) {
-	//button detection
-	//  for(var i = 0; i < targetName.Count ; i++) {
+
 
 			if(type == "push" && args[0] == 1) {
 					push = true;
@@ -48,5 +47,4 @@ function OnOscMessage (args:ArrayList ) {
 				xyCoords[0] = args[0];
 				xyCoords[1] = args[1];
 			}	
-//	}
 }

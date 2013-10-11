@@ -7,31 +7,25 @@ private var toggle : boolean;
 private var xyCoords : float[] = new float[2];
 
 
-
-
 function Start () {
 	oscData = this.GetComponent(OSCSimpleTarget);
-
+	//	oscData = this.GetComponent(OSCMultipleTarget); // <- change if you want to access to the SimpleTarget or MultipleTarget script
 }
 
 function Update () {
-
+	//Get the data from OSCTarget script
 	GetData();
 	
-	transform.position .z = fader*10;
+	// your code goes there...
 	
-	if(toggle) {
-		transform.Rotate (0, 90 * Time.deltaTime, 0);
-	}
-            
+
 }
 
 
 function GetData() {
-
+	//update each local private values
 	fader = oscData.fader;
 	push = oscData.push;
 	toggle = oscData.toggle;
 	xyCoords = oscData.xyCoords;
-
 }
