@@ -10,12 +10,12 @@ import System.Collections.Generic;
 //mettre des boucles foreach
 
 
+var targetName : List.<String> = new List.<String>();  // declaration
+private var type : List.<String> = new List.<String>();  // declaration
 
-/// var targetName : List.<String> = new List.<String>();  // declaration
 
-
-public var targetName : String;
-public var type : String;
+//public var targetName : String;
+//public var type : String;
 
 public var toggle :boolean = false;
 public var push:boolean = false;
@@ -26,9 +26,15 @@ public var fader : float = 0;
 
 function Start () {
 		//init
-		
-		type = targetName;
-		type = Regex.Replace(type, "[^a-z]", "");
+  for(var i = 0; i < targetName.Count ; i++) {
+  
+  		var tmpType :String= targetName[i];
+  		tmpType = Regex.Replace(tmpType, "[^a-z]", "");
+  		
+  		type.Add(tmpType);
+
+   } 
+
 		
 }
 
