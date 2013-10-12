@@ -6,8 +6,8 @@ Unity Touch OSC
 Requirements
 ----------
 
-To use Unity Touch OSC, you need to download the application TouchOSC , for iPhone or Android
-You also need to  coonect your phone to the the same 
+To use Unity Touch OSC, you need to download the application TouchOSC , for iPhone or Android.
+You also need to  coonect your phone to the the same wifi.
 
 
 Getting Started
