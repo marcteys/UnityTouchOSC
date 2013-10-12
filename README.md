@@ -1,8 +1,34 @@
-UnityTouchOSC
-=============
-
-Sample integration of Touch OSC in Unity
+Unity Touch OSC
+=================
 
 
-To do :
-* Use a List<> to get the type of a multiple object : Can use results of similar triggers (ex multiple toggle)
+
+Requirements
+----------
+
+To use Unity Touch OSC, you need to download the application TouchOSC , for iPhone or Android
+You also need to  coonect your phone to the the same 
+
+
+Getting Started
+-------------
+
+ 1. Get the ip address
+* Windows
+* Mac
+
+2. Open the Unity project.
+* 
+
+
+How does it works
+------------------
+
+
+### To do
+
+* Complete documentation
+
+Credits
+-------
+* [Stanisław Halik](https://github.com/sthalik) (Opentrack team) for his help with byte decoding.
