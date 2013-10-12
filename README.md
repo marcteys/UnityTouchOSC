@@ -13,7 +13,7 @@ You also need to  coonect your phone to the the same wifi.
 Getting Started
 -------------
 
- 1. Get the ip address
+1. Get the ip address
 * Windows
 * Mac
 
@@ -31,4 +31,3 @@ How does it works
 
 Credits
 -------
-* [Stanisław Halik](https://github.com/sthalik) (Opentrack team) for his help with byte decoding.
