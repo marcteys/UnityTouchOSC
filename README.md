@@ -13,13 +13,12 @@ You also need to connect the device and the computer at the same wifi.
 Getting Started
 -------------
 
-1. Get the ip address
+#### TouchOSC 
 
-* Windows
-* Mac
+To setup TouchOSC, you can follow the official [docs]() which are clear. The main steps are : [Get the IP Address of your computer](http://hexler.net/docs/touchosc-appendix) and [Configure the OSC connection](http://hexler.net/docs/touchosc-configuration-connections-osc). 
 
-2. Open the Unity project.
-* 
+#### Unity
+
 
 
 How does it works
