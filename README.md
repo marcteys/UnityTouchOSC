@@ -15,8 +15,9 @@ Getting Started
 
 #### TouchOSC 
 
-To setup TouchOSC, you can follow the official [docs]() which are clear. The main steps are 
-1. [Get the IP Address of your computer](http://hexler.net/docs/touchosc-appendix)
+To setup TouchOSC, you can follow the official [docs]() which are clear. The main steps are: 
+
+1. [Get the IP Address of your computer](http://hexler.net/docs/touchosc-appendix).
 2. [Configure the OSC connection](http://hexler.net/docs/touchosc-configuration-connections-osc). 
 
 
