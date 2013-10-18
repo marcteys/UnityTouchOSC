@@ -23,15 +23,18 @@ To setup TouchOSC, you can follow the official [docs]() which are clear. The mai
 
 #### Unity
 
+1. To use UnityTouch OSC, the unity scene needs few things. An empty, with two scripts :
 
 
 How does it works
 ------------------
 
+Unity read the OSC data send at the specific port.
+
 
 ### To do
 
-* Complete documentation
+* Complete documentation // make it clear
 
 Credits
 -------
