@@ -15,7 +15,7 @@ Getting Started
 
 #### TouchOSC 
 
-To setup TouchOSC, you can follow the official [docs]() which are clear. The main steps are: 
+To setup TouchOSC, you can follow the official [docs](http://hexler.net/docs/. The main steps are: 
 
 1. [Get the IP Address of your computer](http://hexler.net/docs/touchosc-appendix).
 2. [Configure the OSC connection](http://hexler.net/docs/touchosc-configuration-connections-osc). 
@@ -29,7 +29,8 @@ To setup TouchOSC, you can follow the official [docs]() which are clear. The mai
 How does it works
 ------------------
 
-Unity read the OSC data send at the specific port.
+TouchOSC send the data via the wifi network, to a specific port.
+Unity read the data from this port. 
 
 
 ### To do
