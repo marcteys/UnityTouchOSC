@@ -23,7 +23,7 @@ To setup TouchOSC, you can follow the official [docs](http://hexler.net/docs/. T
 
 #### Unity
 
-1. To use UnityTouch OSC, the unity scene needs few things. An empty, with two scripts :
+To use UnityTouch OSC, the unity scene needs two scripts.
 
 
 How does it works
