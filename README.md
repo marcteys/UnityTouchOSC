@@ -35,7 +35,7 @@ Unity read the data from this port.
 
 ### To do
 
-* Complete documentation // make it clear
+* Complete documentation
 
 Credits
 -------
