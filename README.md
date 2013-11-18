@@ -29,8 +29,10 @@ To use UnityTouch OSC, the unity scene needs two scripts.
 How does it works
 ------------------
 
-TouchOSC send the data via the wifi network, to a specific port.
-Unity read the data from this port. 
+TouchOSC send the data via the wifi network, to a specifitc port.
+The scripts read the data recieved.
+
+The data interpretation
 
 
 ### To do
