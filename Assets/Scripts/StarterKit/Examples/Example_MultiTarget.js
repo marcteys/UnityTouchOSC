@@ -23,6 +23,8 @@ function Update () {
 	
 	if(toggle) {
 		transform.Rotate (0, 90 * Time.deltaTime, 0);
+	} else {
+		transform.Rotate (0, 0, 0);
 	}
 
    

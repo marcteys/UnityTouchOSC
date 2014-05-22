@@ -21,9 +21,9 @@ function Update () {
 	GetData();
 	
 	// your code goes there...
-	var mapX = (AccelerometerXYZ[0]+10)*18 - 90;
-	var mapY = (AccelerometerXYZ[1]+10)*18 +180;
-	var mapZ = (AccelerometerXYZ[2]+10)*18;
+	var mapX = Remap(AccelerometerXYZ[0],-10,10,-180,180);
+	var mapY = Remap(AccelerometerXYZ[1],-10,10,-180,180);
+	var mapZ = Remap(AccelerometerXYZ[2],-10,10,-180,180);
 	
 	var desiredRotation = Quaternion.Euler(mapY, mapX, mapZ);
 
@@ -32,6 +32,15 @@ function Update () {
 		  Quaternion.Slerp (transform.rotation, desiredRotation, Time.deltaTime * speed);
 	
 
+
+}
+
+
+ 
+
+function Remap ( val : float,  from1: float,  to1: float,  from2: float,  to2: float) {
+
+    return (val - from1) / (to1 - from1) * (to2 - from2) + from2;
 
 }
 
