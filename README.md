@@ -6,23 +6,33 @@ Unity Touch OSC
 Requirements
 ----------
 
-To use Unity Touch OSC, you need to download the application TouchOSC , for iPhone or Android
-You also need to  coonect your phone to the the same 
+To use Unity Touch OSC, you need to download the application TouchOSC, developped by [hexler](http://hexler.net/software/touchosc). You can download the [iOS](https://itunes.apple.com/app/touchosc/id288120394?mt=8) or the [Android](https://play.google.com/store/apps/details?id=net.hexler.touchosc_a) version.
+You also need to connect the device and the computer at the same wifi.
 
 
 Getting Started
 -------------
 
- 1. Get the ip address
-* Windows
-* Mac
+#### TouchOSC 
 
-2. Open the Unity project.
-* 
+To setup TouchOSC, you can follow the official [docs](http://hexler.net/docs/. The main steps are: 
+
+1. [Get the IP Address of your computer](http://hexler.net/docs/touchosc-appendix).
+2. [Configure the OSC connection](http://hexler.net/docs/touchosc-configuration-connections-osc). 
+
+
+#### Unity
+
+To use UnityTouch OSC, the unity scene needs two scripts.
 
 
 How does it works
 ------------------
+
+TouchOSC send the data via the wifi network, to a specifitc port.
+The scripts read the data recieved.
+
+The data interpretation
 
 
 ### To do
@@ -31,4 +41,3 @@ How does it works
 
 Credits
 -------
-* [Stanisław Halik](https://github.com/sthalik) (Opentrack team) for his help with byte decoding.
